@@ -1,0 +1,18 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["GET","POST","DELETE"],
+      "route": "MyInventory/{id}/{itemId?}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
